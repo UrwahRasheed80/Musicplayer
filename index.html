@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="music-player">
+        <audio id="audio-player">
+            <source src="assets/song1.mp3" type="audio/mpeg">
+            <source src="assets/song2.mp3" type="audio/mpeg">
+            <source src="assets/song3.mp3" type="audio/mpeg">
+            <source src="assets/song4.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <input type="range" id="progress-bar" value="0">
+
+        <div class="controls">
+            <button id="shuffle"><img src="https://img.icons8.com/ios-filled/50/000000/shuffle.png" alt="Shuffle"></button>
+            <button id="prev"><img src="https://img.icons8.com/ios-filled/50/000000/previous.png" alt="Previous"></button>
+            <button id="play-pause"><img src="https://img.icons8.com/ios-filled/50/000000/play.png" alt="Play"></button>
+            <button id="next"><img src="https://img.icons8.com/ios-filled/50/000000/next.png" alt="Next"></button>
+            <button id="repeat"><img src="https://img.icons8.com/ios-filled/50/000000/repeat.png" alt="Repeat"></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

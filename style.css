@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoz7rjfKgGc7c7dPsPryytdQoLO8k7kLFxUQ&s");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.music-player {
+    background: whitesmoke;
+    padding: 110px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(113, 71, 71, 0.2);
+    text-align: center;
+    width: 50%;
+    height: 50%;
+}
+
+#progress-bar {
+    margin-top: 30px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button img {
+    width: 30px;
+}
+
+@media (max-width: 600px) {
+    .controls {
+        gap: 10px;
+    }
+
+    button img {
+        width: 25px;
+    }
+}
